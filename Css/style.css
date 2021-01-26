@@ -4,8 +4,13 @@ body{
     font-family: sans-serif;
     overflow-x: hidden;
 }
-nav{margin: 0;padding: 0;}
+nav{margin: 0;
+    padding: 0;
+    position:sticky;
+    top: 0;
+}
 ul{
+    
     background: rgb(122, 28, 64);
     display: flex;
     justify-content: flex-end;
@@ -72,27 +77,28 @@ button{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px;
+    cursor: pointer;
 }
 .main-body{
     margin: 50px 0 0 220px;
+    color: #000;
 }
 .my-habite{
     width: 100%;
     height: 20vh;
-   
-    background: green;
+    background: rgba(122, 28, 64,0.4);
 }
 .quote{
     width: 100%;
     height: 20vh;
    
-    background: red;
+    background: rgb(231, 231, 231);
 }
 .goal{
     width: 100%;
     height: 20vh;
    
-    background: blue;
+    background:rgba(122, 28, 64,0.4);
 }
 .my-habite h3,
 .quote h3,
@@ -109,6 +115,105 @@ button{
 .goal p{
     display: flex;
     justify-content: flex-start;
-    margin-top: 0px;
     margin-left: 10px;
+}
+.contact{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    background: rgb(122, 28, 64);
+    color: #fff;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "h3 p1"
+    "h4 c1"
+    "p2 c2"
+    "p2 c3"
+    "p2 c4"
+    "p2 c5"
+    "c6 c6"
+    "c7 c7"
+    "c8 c8";
+    grid-column-gap: 100px;
+}
+.contact-address h3{grid-area: h3;}
+.contact-address h4{grid-area: h4;}
+.contact-address p{grid-area: p2;}
+form p{grid-area: p1;}
+#c1{grid-area: c1;}
+#c2{grid-area: c2;}
+#c3{grid-area: c3;}
+#c4{grid-area: c4;}
+#c5{grid-area: c5;}
+#c6{grid-area: c6;}
+#c7{grid-area: c7;}
+#c8{grid-area: c8;}
+
+
+.contact-address{
+    width: 100%;
+    height: 40vh;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.contact-address p{
+    margin-top: 10px;
+}
+form{width: 80%;}
+.contact-form{
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    height: 50vh;
+    
+}
+input{
+    width: 100%;
+    height:25px ;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    
+}
+input:hover{
+    background: rgb(238, 238, 238);
+}
+textarea:hover{
+    background: rgb(238, 238, 238);
+}
+textarea{width: 100%;margin: 10px;border: none;}
+.contact-form p{
+    width: 100%;
+    margin: 10px;
+}
+input[type=submit]{
+    width: 80px;
+    height: 30px;
+    margin-left: 85%;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: none;
+}
+.icon-socail-media{
+    
+}
+.icon-socail-media a{
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+}
+.last{
+    background: #000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

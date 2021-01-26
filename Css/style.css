@@ -1,33 +1,114 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-}
-
-body{
     overflow-x: hidden;
 }
-
-.container{
-    width: 100%;
-    height: 100vh;
-    padding: 10px;
-    background: rgb(217, 148, 231);
-    clip-path: polygon(0 0, 100% 0, 100% 26%, 19% 70%);
-}
-
+nav{margin: 0;padding: 0;}
 ul{
+    background: rgb(122, 28, 64);
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
 }
-
 ul li{
     padding: 10px;
 }
-
 ul li a {
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+}
+nav ul :hover{
+    background:orange;
+}
+.fa-home,
+.fa-info,
+.fa-address-card,
+.fa-envelope-o{
+    margin-right: 10px;
+}
+
+.container{
+    color: #fff;
+}
+.head{
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+h2,p{margin: 0 ;}
+.title{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.head p{text-align: center;margin-left: 30%;}
+h2{margin-left: 30%;}
+.photo{
+    margin: -200px 0 0 200px;
+    padding: 0;
+}
+img{width: 300px;}
+.text p{
+    margin-left: 55%;
+    margin-top: 10px;
+    width: 30%;
+    color: #000;
+}
+button{
+    margin-left: 55%;
+    margin-top: 30px;
+    width: 10%;
+    height: 40px;
+    border: 3px solid rgb(122, 28, 64);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.main-body{
+    margin: 50px 0 0 220px;
+}
+.my-habite{
+    width: 100%;
+    height: 20vh;
+   
+    background: green;
+}
+.quote{
+    width: 100%;
+    height: 20vh;
+   
+    background: red;
+}
+.goal{
+    width: 100%;
+    height: 20vh;
+   
+    background: blue;
+}
+.my-habite h3,
+.quote h3,
+.goal h3{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    margin-left: 10px; 
+}
+.my-habite p,
+.quote p,
+.goal p{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-left: 10px;
 }

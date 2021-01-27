@@ -20,8 +20,8 @@ ul li{
     padding: 10px;
 }
 ul li a {
-    margin: 10px;
-    padding: 10px ;
+    margin-right: 25px;
+    margin-left: 25px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -71,7 +71,7 @@ nav ul :hover{
     padding: 20px;
     grid-area: h2;
 }
-.title h2{margin: 0;text-align: center;}
+.title h2{margin: 0;text-align: center;font-size: 50px;}
 .I-am{
     padding: 10px;
     margin:0 0 30px 0;
@@ -194,6 +194,8 @@ form p{grid-area: p1;}
     margin-left: 10px;
     margin-top: 10px;
 }
+.contact-address h3{font-size: 30px;}
+.contact-address h4{font-size: 20px;}
 .contact-address p{
     margin-top: 10px;
 }
@@ -319,7 +321,7 @@ input[type=submit]:hover{
         height: 35vh;
     }
 }
-@media(max-width:400px){
+@media(max-width:430px){
     .photo{
         width: 100%;
         margin-left: 20%;
@@ -376,7 +378,8 @@ input[type=submit]:hover{
     body{
         margin: 0;
         padding: 0;
-        font-size: small;
+        font-size: 10px;
+        
     }
     .my-habite,
     .quote,
@@ -384,11 +387,28 @@ input[type=submit]:hover{
         height: 30vh;
     }
     nav{
-        background:  rgb(122, 28, 64);;
-        height: 7vh;
+        height: 30px;
+        margin-top: 0;
     }
     ul{
-        display: none;
+        margin: -10px 0 0 0;
+        padding: 10px;
+        width: 100%;
+        height: 40px;
+        ;
     }
-    
+    ul li{
+        padding: 0;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    ul li a{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    ul li i{padding: 10px 0 10px 0;margin: 0 0 0 3px;}
+    h2,h3,p{font-size: 15px;}
+    #g1{font-size: 30px;}
+    .contact-address h3{font-size: 25px;}
+    .contact-address h4{font-size: 15px;}
 }

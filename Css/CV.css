@@ -3,24 +3,22 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: 'Trispace', sans-serif;}
-nav{background: rgb(122, 28, 64);
-    height: 39px;
+nav{
+    background: rgb(122, 28, 64);
     position:sticky;
     top: 0;
 }
-
 ul{
-    float:right;
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
     list-style-type: none;
 }
 ul li{
-    display: inline-block;
     padding: 10px;
+    margin:5px 30px 5px 10px;
 }
 ul li a {
-    margin-right: 25px;
-    margin-left: 25px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -35,40 +33,34 @@ nav ul :hover{
 .fa-envelope-o{
     margin-right: 10px;
 }
-.text-cover a{text-decoration: none;}
 .head-cover{
     width: 80%;
     margin: 50px 0 0 120px;
-    padding: 30px;
+    padding:20px 0 20px 0px;
     background:  rgb(194, 191, 191);
     border: 3px solid rgb(122, 28, 64);
     display: grid;
-    justify-content: space-between;
+    justify-content: space-evenly;
     grid-template-columns: auto auto;
 }
-.text-cover{}
+.text-cover a{text-decoration: none;margin-right: 10px;}
 .photo-cover{
     border: 3px solid rgb(122, 28, 64);
 }
 .button-download{
-    margin:100px auto 100px auto;
-    height: 50px;
     display: flex;
     justify-content: center;
-    
+    margin: 100px 0 100px 0;
 }
-.btn{
-    background: none;
+button{
     width: 200px;
-    background: rgb(122,28,64);
-    color: #fff;
-    border: none;
-    font-size: 18px;
+    height: 40px;
+    color: rgb(122,28,64);
+    border: 2px solid rgb(122,28,64);
+    outline: none;
+    background: none;
+    cursor: pointer;
 }
-.fa-download{
-    margin-right: 10px;
-}
-
 #contact{
     margin-top: 20px;
     width: 100%;
@@ -107,28 +99,18 @@ form p{grid-area: p1;}
 
 
 .contact-address{
-    width: 100%;
-    height: 40vh;
-    padding: 20px;
-    margin-left: 80px;
-    margin-top: 10px;
+    margin-left: 60px;
 }
-.contact-address h3{font-size: 30px;}
+.contact-address h3{font-size: 25px;}
 .contact-address h4{font-size: 20px;}
-.contact-address p{
-    margin-top: 10px;
-}
-form{width: 80%;}
+form{width: 90%;}
 .contact-form{
     margin-top: 10px;
     padding: 10px;
-    width: 100%;
-    height: 50vh;
-    
 }
 input{
     width: 100%;
-    height:25px ;
+    height:28px ;
     margin: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -150,11 +132,10 @@ textarea{width: 100%;margin: 10px;border: none;outline: none;}
 input[type=submit]{
     width: 80px;
     height: 30px;
-    margin-left: 85%;
+    margin-left: 90%;
     font-weight: bold;
     font-size: 15px;
     color: #fff;
-    border-radius: 5px;
     border: 2px solid #fff;
     background: none;
 }
@@ -167,10 +148,22 @@ input[type=submit]:hover{
     margin: 0;
 }
 .last{
-    background: rgb(231, 231, 231);
+    background: rgb(194, 191, 191);
     color: rgb(122, 28, 64);
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media(max-width:768px){
+    .head-cover{
+        margin: 50px 0 0 60px;
+    }
+    #contact{
+        grid-gap: 50px;
+    }
+    .contact-address{margin-left: 30px;}
+    input[type=submit]{
+        margin-left: 75%;
+    }
 }

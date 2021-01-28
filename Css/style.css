@@ -3,24 +3,22 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: 'Trispace', sans-serif;}
-nav{background: rgb(122, 28, 64);
-    height: 39px;
+nav{
+    background: rgb(122, 28, 64);
     position:sticky;
     top: 0;
 }
-
 ul{
-    float:right;
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
     list-style-type: none;
 }
 ul li{
-    display: inline-block;
     padding: 10px;
+    margin:5px 30px 5px 10px;
 }
 ul li a {
-    margin-right: 25px;
-    margin-left: 25px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -39,19 +37,14 @@ nav ul :hover{
 .container{
     color: #fff;
 }
-.cover-background{
-    margin: 0;
-    background-image: url('https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+#cbg{
+    width: 100%;
     background-size: cover;
     background-position: center;
     height: 60vh;
-   
 }
 .head{
-    margin: 0;
-    padding: 0;
     display: grid;
-    justify-content: space-evenly;
     grid-column-gap: 50px;
     grid-template-columns: auto auto;
     grid-template-areas: 
@@ -61,20 +54,15 @@ nav ul :hover{
     "photo button";
 }
 .paragraph{
-    padding: 0;
-    width: 100%;
-    display: inline;
-    justify-content: center;
-    margin-top: -150px;
+    margin-top: -100px;
 }
 .title{
-    padding: 20px;
     grid-area: h2;
 }
 #g1{margin: 0;text-align: center;font-size: 50px;}
 .I-am{
     padding: 10px;
-    margin:0 0 30px 0;
+    margin: 0;
     text-align: center;
     grid-area: p1;
 }
@@ -85,23 +73,21 @@ nav ul :hover{
 img{width: 300px;}
 .text p{
     width: 50%;
-    margin-left: 25%;
+    margin: auto;
+    padding: 10px;
 }
 .text{
-    margin: 0;
     grid-area: p2;
     color:  rgb(122, 28, 64);
 }
 button{
     background: none;
-    margin: 0;
     color:  rgb(122, 28, 64);
     border: 2px solid rgb(122, 28, 64);
     text-transform: uppercase;
     font-size: 18px;
     cursor: pointer;
     grid-area: button;
-    display: flex;
     margin-left: 25%;
     height: 45px;
 }
@@ -109,28 +95,25 @@ button:hover{
     background: rgb(122, 28, 64);
     color: #fff;
 }
-.main-body{
-    margin-top: 50px;
-    color: #000;
-}
-.main-data{margin: 100px 0 100px 220px;}
+
+.main-body{margin: 100px 10px 100px 220px;}
 .my-habite{
+    padding: 10px;
     margin: 100px 0 100px 0;
-    width: 100%;
     height: 50vh;
     background: rgba(122, 28, 64,0.4);
     color:  rgb(122, 28, 64);;
 }
 .quote{
+    padding: 10px;
     margin: 100px 0 100px 0;
-    width: 100%;
     height: 50vh;
    color:  rgb(122, 28, 64);;
     background: rgb(194, 191, 191);
 }
 .goal{
+    padding: 10px;
     margin: 100px 0 100px 0;
-    width: 100%;
     height: 50vh;
     color:  rgb(122, 28, 64);
     background:rgba(122, 28, 64,0.4);
@@ -138,19 +121,12 @@ button:hover{
 .my-habite h3,
 .quote h3,
 .goal h3{
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;  
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 .my-habite p,
 .quote p,
 .goal p{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
+    margin:50px 0 0 10px;
 }
 #contact{
     margin-top: 20px;
@@ -190,28 +166,18 @@ form p{grid-area: p1;}
 
 
 .contact-address{
-    width: 100%;
-    height: 40vh;
-    padding: 20px;
-    margin-left: 80px;
-    margin-top: 10px;
+    margin-left: 60px;
 }
-.contact-address h3{font-size: 30px;}
+.contact-address h3{font-size: 25px;}
 .contact-address h4{font-size: 20px;}
-.contact-address p{
-    margin-top: 10px;
-}
-form{width: 80%;}
+form{width: 90%;}
 .contact-form{
     margin-top: 10px;
     padding: 10px;
-    width: 100%;
-    height: 50vh;
-    
 }
 input{
     width: 100%;
-    height:25px ;
+    height:28px ;
     margin: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -233,11 +199,10 @@ textarea{width: 100%;margin: 10px;border: none;outline: none;}
 input[type=submit]{
     width: 80px;
     height: 30px;
-    margin-left: 85%;
+    margin-left: 90%;
     font-weight: bold;
     font-size: 15px;
     color: #fff;
-    border-radius: 5px;
     border: 2px solid #fff;
     background: none;
 }
@@ -250,177 +215,41 @@ input[type=submit]:hover{
     margin: 0;
 }
 .last{
-    background: rgb(231, 231, 231);
+    background: rgb(194, 191, 191);
     color: rgb(122, 28, 64);
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media(max-width:900px){
+@media(max-width:768px){
+    img{width: 225px;}
     .photo{
-        width: 100%;
-        padding: 0;
-        margin-left:20%;
-}
-    img{
-        width: 280px;
-        margin-left: 15%;
+        margin: -150px 0 0 100px;
     }
     .head{
-        display: inline;
-        justify-content: center;
-    }
-    .paragraph{
-        font-size: medium;
-        color: rgb(122, 28, 64);
-    }
-    .text p{
-        margin-left: 270px;
-    }
-    button{
-        margin-left: 270px;
-    }
-    .title h2{
-        font-size: 10px;
-    }
-    .main-body{
-        display: inline;
-    }
-    .main-data{
-        margin: 0;
-    }
-    .contact{
-        display: inline;
-        width: 100%;
-      
-    }
-    .contact-address{
-        margin: 0;
-        width: 100%;
-        height: 30vh;
-        background: rgb(122, 28, 64);
-    }
-    .contact-address h3,
-    .contact-address h4,
-    .contact-address p,
-    .contact-address a{margin-left: 15px;}
-    .contact-form{
-        width: 100%;
-        height: 35;
-        margin: -25px 0 0 0;
-        padding: 10px;
-        background: rgb(122, 28, 64);
-    }
-    form{
-        width: 90%;
-        margin-left: 15px;
-    }
-    input[type=submit]{
-        margin-left: 90%;
-    }
-    body{
-        font-size:medium;
+        grid-column-gap: 25px;
     }
     .my-habite,
     .quote,
-    .goal{
-        height: 35vh;
+    .goal{height: 40vh;}
+    #contact{
+        grid-gap: 50px;
+    }
+    .contact-address{margin-left: 30px;}
+    input[type=submit]{
+        margin-left: 75%;
     }
 }
-@media(max-width:430px){
-    .photo{
-        width: 100%;
-        margin-left: 20%;
+
+@media(max-width:425px){
+    .about-content{
+        grid-gap: 100px;
     }
-    img{
-        width: 150px;
-        margin:10%;
-    }
-    .head{
-        display: inline;
-        justify-content: center;
-    }
-    .paragraph{
-        padding: 0;
-        color: rgb(122, 28, 64);
-    }
-    .text p{
-        margin-left: 50px;
-        width: 80%;
-    }
-    button{
-        margin-left: 50px;
-    }
-    .main-body{
-        display: inline;
-    }
-    .main-data{
-        margin: 0;
-    }
-    .contact{
-        display: inline;
-        width: 100%;
-      
-    }
-    .contact-address{
-        margin: 0;
-        width: 100%;
-        height: 50vh;
-        background: rgb(122, 28, 64);
-    }
-    .contact-address h3,
-    .contact-address h4,
-    .contact-address p,
-    .contact-address a{margin-left: 15px;}
-    .contact-form{
-        width: 100%;
-        height: 60vh;
-        margin: -50px 0 0 0;
-        padding: 10px;
-        background: rgb(122, 28, 64);
-    }
-    form{
-        width: 80%;
-        margin-left: 15px;
+    #contact{
+        grid-gap: 50px;
     }
     input[type=submit]{
-        margin:10px;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        font-size: 10px;
         
     }
-    .my-habite,
-    .quote,
-    .goal{
-        height: 30vh;
-    }
-    nav{
-        height: 30px;
-        margin-top: 0;
-    }
-    ul{
-        margin: -10px 0 0 0;
-        padding: 10px;
-        width: 100%;
-        height: 40px;
-        ;
-    }
-    ul li{
-        padding: 0;
-        margin-left: 20px;
-        display: inline-block;
-    }
-    ul li a{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    ul li i{padding: 10px 0 10px 0;margin: 0 0 0 3px;}
-    h2,h3,p{font-size: 15px;}
-    #g1{font-size: 30px;}
-    .contact-address h3{font-size: 25px;}
-    .contact-address h4{font-size: 15px;}
 }

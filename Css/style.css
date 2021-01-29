@@ -2,11 +2,13 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Trispace', sans-serif;}
+    font-family: 'Trispace', sans-serif;
+}
 nav{
     background: rgb(122, 28, 64);
     position:sticky;
     top: 0;
+    z-index: 99;
 }
 nav ul{
     display: flex;
@@ -63,12 +65,16 @@ nav ul li a:hover{
 .title{
     grid-area: h2;
 }
-#g1{margin: 0;text-align: center;font-size: 50px;}
+#g1{margin:0 0 0 35% ;text-align: center;font-size: 50px;}
 .I-am{
     padding: 10px;
     margin: 0;
     text-align: center;
     grid-area: p1;
+}
+#Aboutme:hover{
+    background: rgb(122, 28, 64);
+    color: #fff;
 }
 .photo{
     margin: -150px 0 0 220px;
@@ -96,6 +102,7 @@ img{width: 300px;}
     grid-area: button;
     text-decoration: none;
 }
+
 .paragraph a{
     display: flex;
     justify-content: center;
@@ -105,29 +112,21 @@ img{width: 300px;}
 .my-habite{
     padding: 10px;
     margin: 100px 0 100px 0;
-    height: 70vh;
+    height: 50vh;
     background: rgb(122, 28, 64,0.8);
+    
     color:  #fff;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 0px;
 }
-.photo-habite{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-}
-.photo-habite img{
-    width: 70%;
-    height: 60vh;
-}
-.quote{
+.the-value{
     padding: 10px;
     margin: 100px 0 100px 0;
-    height: 50vh;
+    height: 30vh;
     color:  #fff;
     background: rgb(3, 3, 3,0.5);
+}
+.the-value p{
+    text-transform: uppercase;
+    margin-left: 20%;
 }
 .goal{
     padding: 10px;
@@ -137,12 +136,13 @@ img{width: 300px;}
     color:  #fff;
 }
 .my-habite h3,
-.quote h3,
+.the-value h3,
 .goal h3{
     margin-left: 10px;
     font-size: 30px;
 }
-
+.my-habite ul,
+.goal ul{margin-left: 20%;}
 /* About page */
 .aboutme-text{
     background:rgb(194, 191, 191);
@@ -309,10 +309,10 @@ input[type=submit]:hover{
         font-size: 13px;
     }
     .my-habite,
-    .quote,
+    .the-value,
     .goal{height: 50vh;}
     .my-habite h3,
-    .quote h3,
+    .the-value h3,
     .goal h3{font-size: 25px;}
     .list-habite{
         margin: 0 0 0 30%;
@@ -363,10 +363,10 @@ input[type=submit]:hover{
     }
     .main-body{margin: 0 10px 0 10px;}
     .my-habite,
-    .quote,
+    .the-value,
     .goal{height: 45vh;}
     .my-habite h3,
-    .quote h3,
+    .the-value h3,
     .goal h3{font-size: 20px;}
     .list-habite{
         margin: 0 0 0 20%;
@@ -426,7 +426,7 @@ input[type=submit]:hover{
     
     .last{font-size: 11px;}
 }
-@media(max-width:375px){
+@media(max-width:400px){
     #cbg{
         height: 25vh;
     }
@@ -437,7 +437,7 @@ input[type=submit]:hover{
     .text p{margin: 8px;padding: 8px;width: auto;}
     nav{font-size: 11px;}
     .my-habite h3,
-    .quote h3,
+    .the-value h3,
     .goal h3{font-size: 15px;}
     #Aboutme{
         width: 20%;

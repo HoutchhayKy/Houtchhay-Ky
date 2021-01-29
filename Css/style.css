@@ -8,17 +8,17 @@ nav{
     position:sticky;
     top: 0;
 }
-ul{
+nav ul{
     display: flex;
     justify-content: flex-end;
     margin: 0;
     list-style-type: none;
 }
-ul li{
+nav ul li{
     padding: 10px;
     margin:5px 30px 5px 10px;
 }
-ul li a {
+nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -101,13 +101,26 @@ img{width: 300px;}
     justify-content: center;
     align-items: center;
 }
-.main-body{margin: 100px 10px 100px 220px;}
+.main-body{margin: 100px 10px 100px 220px;word-spacing: 3px;}
 .my-habite{
     padding: 10px;
     margin: 100px 0 100px 0;
-    height: 50vh;
+    height: 70vh;
     background: rgb(122, 28, 64,0.8);
     color:  #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0px;
+}
+.photo-habite{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.photo-habite img{
+    width: 70%;
+    height: 60vh;
 }
 .quote{
     padding: 10px;
@@ -127,12 +140,9 @@ img{width: 300px;}
 .quote h3,
 .goal h3{
     margin-left: 10px;
+    font-size: 30px;
 }
-.my-habite p,
-.quote p,
-.goal p{
-    margin:50px 0 0 10px;
-}
+
 /* About page */
 .aboutme-text{
     background:rgb(194, 191, 191);
@@ -146,6 +156,9 @@ img{width: 300px;}
     align-items:flex-start;
     grid-template-columns: auto auto;
     grid-gap: 400px;
+}
+.about-content p{ 
+    word-spacing: 6px;
 }
 /* CV page */
 .head-cover{
@@ -297,7 +310,13 @@ input[type=submit]:hover{
     }
     .my-habite,
     .quote,
-    .goal{height: 40vh;}
+    .goal{height: 50vh;}
+    .my-habite h3,
+    .quote h3,
+    .goal h3{font-size: 25px;}
+    .list-habite{
+        margin: 0 0 0 30%;
+    }
     /* About page responsive 768 */
     .about-content{
         grid-gap: 100px;
@@ -345,12 +364,18 @@ input[type=submit]:hover{
     .main-body{margin: 0 10px 0 10px;}
     .my-habite,
     .quote,
-    .goal{height: 40vh;}
+    .goal{height: 45vh;}
+    .my-habite h3,
+    .quote h3,
+    .goal h3{font-size: 20px;}
+    .list-habite{
+        margin: 0 0 0 20%;
+    }
     nav{font-size: 12px;}
-    ul li{
+    nav ul li{
         margin: 5px 10px 5px 10px;
     }
-    ul li a {padding: 0;}
+    nav ul li a {padding: 0;}
     /* About page responsive 425 */
     .aboutme-text{
         padding: 30px;
@@ -411,13 +436,16 @@ input[type=submit]:hover{
     }
     .text p{margin: 8px;padding: 8px;width: auto;}
     nav{font-size: 11px;}
+    .my-habite h3,
+    .quote h3,
+    .goal h3{font-size: 15px;}
     #Aboutme{
         width: 20%;
         height: 40px;
         font-size: 11px;
         margin-left: 38%;
     }
-    ul li{
+    nav ul li{
         margin: 5px;}
-        .last{font-size: 10px;}
+    .last{font-size: 10px;}
 }

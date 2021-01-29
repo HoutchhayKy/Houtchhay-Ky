@@ -21,19 +21,22 @@ ul li{
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: #fff;
+    background: none;
+    padding: 10px;
 }
-nav ul :hover{
-    background:#fff;
+nav ul li a:hover{
     color: rgb(122, 28, 64);
+    background:rgb(255, 255, 255);
 }
 .fa-home,
 .fa-info,
 .fa-address-card,
 .fa-envelope-o{
     margin-right: 10px;
+    padding: 0;
 }
-
+/* Home page */
 .container{
     color: #fff;
 }
@@ -55,6 +58,7 @@ nav ul :hover{
 }
 .paragraph{
     margin-top: -100px;
+    color: #fff;
 }
 .title{
     grid-area: h2;
@@ -80,43 +84,44 @@ img{width: 300px;}
     grid-area: p2;
     color:  rgb(122, 28, 64);
 }
-button{
-    background: none;
+#Aboutme{
     color:  rgb(122, 28, 64);
     border: 2px solid rgb(122, 28, 64);
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin:30px 0 0 25%;
     grid-area: button;
-    margin-left: 25%;
-    height: 45px;
+    text-decoration: none;
 }
-button:hover{
-    background: rgb(122, 28, 64);
-    color: #fff;
+.paragraph a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .main-body{margin: 100px 10px 100px 220px;}
 .my-habite{
     padding: 10px;
     margin: 100px 0 100px 0;
     height: 50vh;
-    background: rgba(122, 28, 64,0.4);
-    color:  rgb(122, 28, 64);;
+    background: rgb(122, 28, 64,0.8);
+    color:  #fff;
 }
 .quote{
     padding: 10px;
     margin: 100px 0 100px 0;
     height: 50vh;
-   color:  rgb(122, 28, 64);;
-    background: rgb(194, 191, 191);
+    color:  #fff;
+    background: rgb(3, 3, 3,0.5);
 }
 .goal{
     padding: 10px;
     margin: 100px 0 100px 0;
     height: 50vh;
-    color:  rgb(122, 28, 64);
-    background:rgba(122, 28, 64,0.4);
+    background: rgb(122, 28, 64,0.8);
+    color:  #fff;
 }
 .my-habite h3,
 .quote h3,
@@ -128,6 +133,50 @@ button:hover{
 .goal p{
     margin:50px 0 0 10px;
 }
+/* About page */
+.aboutme-text{
+    background:rgb(194, 191, 191);
+    margin: 150px 0 200px 0;
+    padding: 50px;
+    color: rgb(122,28,64);
+}
+.about-content{
+    display: grid;
+    justify-content: center;
+    align-items:flex-start;
+    grid-template-columns: auto auto;
+    grid-gap: 400px;
+}
+/* CV page */
+.head-cover{
+    width: 80%;
+    margin: 50px 0 0 120px;
+    padding:20px 0 20px 0px;
+    background:  rgb(194, 191, 191);
+    border: 3px solid rgb(122, 28, 64);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+}
+.text-cover a{text-decoration: none;margin-right: 10px;}
+.photo-cover{
+    border: 3px solid rgb(122, 28, 64);
+}
+.button-download{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+}
+button{
+    width: 200px;
+    height: 40px;
+    color: rgb(122,28,64);
+    border: 2px solid rgb(122,28,64);
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+/* Contact section */
 #contact{
     margin-top: 20px;
     width: 100%;
@@ -183,6 +232,8 @@ input{
     font-weight: bold;
     border: none;
     outline: none;
+    padding: 0 0 0 10px;
+    
     
 }
 input:hover{
@@ -191,7 +242,13 @@ input:hover{
 textarea:hover{
     background: rgb(238, 238, 238);
 }
-textarea{width: 100%;margin: 10px;border: none;outline: none;}
+textarea{
+    width: 100%;
+    margin: 10px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 10px;
+}
 .contact-form p{
     width: 100%;
     margin: 10px;
@@ -205,6 +262,8 @@ input[type=submit]{
     color: #fff;
     border: 2px solid #fff;
     background: none;
+    padding: 0;
+    cursor: pointer;
 }
 input[type=submit]:hover{
     background: #fff;
@@ -223,6 +282,7 @@ input[type=submit]:hover{
     align-items: center;
 }
 @media(max-width:768px){
+    /* Home page responsive 768 */
     img{width: 225px;}
     .photo{
         margin: -150px 0 0 100px;
@@ -230,26 +290,134 @@ input[type=submit]:hover{
     .head{
         grid-column-gap: 25px;
     }
+    #Aboutme{
+        width: 30%;
+        height: 40px;
+        font-size: 13px;
+    }
     .my-habite,
     .quote,
     .goal{height: 40vh;}
-    #contact{
-        grid-gap: 50px;
-    }
-    .contact-address{margin-left: 30px;}
-    input[type=submit]{
-        margin-left: 75%;
-    }
-}
-
-@media(max-width:425px){
+    /* About page responsive 768 */
     .about-content{
         grid-gap: 100px;
     }
+    /* CV page responsive 768 */
+    .head-cover{margin: 50px 0 0 75px;}
+    /* Contact responsive 768 */
     #contact{
         grid-gap: 50px;
+        height:75vh;
+    }
+    .contact-address{margin-left: 30px;}
+    input[type=submit]{
+        margin-left: 80%;
+    }
+    .last{font-size: 13px;}
+}
+
+@media(max-width:425px){
+    /* Home page responsive 425 */
+    #cbg{
+        height: 30vh;
+    }
+    img{width: 150px;}
+    .photo{
+        margin: -100px 0 0 135px;
+    }
+    .paragraph{
+        margin: 0;
+        padding: 10px;
+        color: rgb(122, 28, 64);
+        display: inline;
+    }
+    #g1{font-size: 40px;}
+    .head{
+        display: inline;
+    }
+    .text p{margin: 10px;padding: 10px;width: auto;}
+    #Aboutme{
+        width: 25%;
+        height: 40px;
+        font-size: 12px;
+        margin-left: 35%;
+    }
+    .main-body{margin: 0 10px 0 10px;}
+    .my-habite,
+    .quote,
+    .goal{height: 40vh;}
+    nav{font-size: 12px;}
+    ul li{
+        margin: 5px 10px 5px 10px;
+    }
+    ul li a {padding: 0;}
+    /* About page responsive 425 */
+    .aboutme-text{
+        padding: 30px;
+    }
+    .about-content{
+        display: inline;
+        margin: 10px;
+    }
+    /* CV page responsive 425 */
+    .head-cover{
+        background: #000;
+        width: 100%;
+        display: inline;
+        align-items: center;
+        grid-template-columns: auto;
+        border: none;
+        background: none;
+    }
+    .text-cover{
+        margin: 30px 0 30px 0;
+        text-align:center;
+        padding: 20px;
+        background:  rgb(194, 191, 191);
+    }
+    .photo-cover{
+        border: none;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    /* Contact page responsive 425 */
+    #contact{
+        display: inline;
+    }
+    .contact-address{
+        background: rgb(122,28,64);
+        margin: 0;
+        padding: 20px;
+    }
+    .contact-form{
+        background: rgb(122,28,64);
+        margin: 0;
     }
     input[type=submit]{
-        
+        margin-left: 84%;
     }
+    body{font-size: 13px;}
+    
+    .last{font-size: 11px;}
+}
+@media(max-width:375px){
+    #cbg{
+        height: 25vh;
+    }
+    img{width: 125px;}
+    .photo{
+        margin: -100px 0 0 125px;
+    }
+    .text p{margin: 8px;padding: 8px;width: auto;}
+    nav{font-size: 11px;}
+    #Aboutme{
+        width: 20%;
+        height: 40px;
+        font-size: 11px;
+        margin-left: 38%;
+    }
+    ul li{
+        margin: 5px;}
+        .last{font-size: 10px;}
 }

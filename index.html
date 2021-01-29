@@ -15,15 +15,15 @@
 <body>
     <nav>
         <ul>
-            <li><a href="/index.html"><i class="fa fa-home" ></i>Home</a></li>
-            <li><a href="/pages/About.html"><i class="fa fa-info"></i>About</a></li>
-            <li><a href="/pages/CV.html"><i class="fa fa-address-card"></i>CV</a></li>
-            <li><a href="#contact"><i class="fa fa-envelope-o"></i>Contact</a></li>
+            <li class="hvr-wobble-horizontal"><a href="/index.html"><i class="fa fa-home" ></i>Home</a></li>
+            <li class="hvr-wobble-horizontal"><a href="/pages/About.html"><i class="fa fa-info"></i>About</a></li>
+            <li class="hvr-wobble-horizontal"><a href="/pages/CV.html"><i class="fa fa-address-card"></i>CV</a></li>
+            <li class="hvr-wobble-horizontal"><a href="#contact"><i class="fa fa-envelope-o"></i>Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <img id="cbg" src="/images/Cover.jpeg" alt="Cover background">
+        <div class="cover-background"></div><img id="cbg" src="/images/Cover.jpeg" alt="Cover background"></div>
         <div class="head">
             <div class="photo">
                 <img src="/images/houtchhay.jpg" alt="my-photo">
@@ -36,7 +36,7 @@
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit, perspiciatis voluptate, eius itaque vel, mollitia expedita consequuntur nihil totam voluptas fugiat modi a illum illo animi dolor eos molestias!</p>
                 </div>
-                <button class="hvr-pop" src="#">About me</button>
+                <a id="Aboutme" class="hvr-pop" style="background-color: rgb(122,28,64); color: #fff;" href="/pages/About.html">About me</a>
             </div>
         </div>
         <div class="main-body">
@@ -64,13 +64,13 @@
                     <a id="c6" class="fa fa-facebook-square" style="font-size: 30px; color: #fff;" href="#"></a>
                     <a id="c7" class="	fa fa-telegram" style="font-size: 30px; color: #fff;" href="#"></a>
                     <a id="c8" class="fa fa-envelope" style="font-size: 30px; color: #fff;" href="#"></a>
-                    <a id="c9" class="fa fa-location-arrow" style="font-size: 30px; color: #fff;" href="#"></a>
+                    <a id="c9" class="fa fa-location-arrow" style="font-size: 30px; color: #fff;" href="https://goo.gl/maps/UkALLH5mxS1r12jt6" target="_blank"></a>
                 </div>
                     
                 <div class="contact-form">
                     <form action="#">
                         <p>Looking forward to answering your email.</p>
-                        <input id="c1"type="text" placeholder="Name" required>
+                         <input id="c1"type="text" placeholder="Name" required>
                         <input id="c2" type="email" placeholder="Email" required>
                         <input id="c3" type="tel" placeholder="Phone Number" required>
                         <textarea style="font-size: 15px; font-weight: bold;" id="c4" cols="50" rows="5" placeholder="Type your message here"></textarea>
